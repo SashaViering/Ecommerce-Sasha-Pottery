@@ -37,6 +37,8 @@
 .fontSize{
     font-size: 30px !important;
     margin-top: 80px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .fontWeight{
     font-weight: 700 !important;
@@ -44,6 +46,8 @@
 .fontSize2{
     font-size: 20px;
     margin-bottom: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .fontwBold{
     font-weight: 700;
@@ -80,7 +84,7 @@ body{
 .navbar{
     padding-top: 35px;
 }
-@media only screen and (min-width: 480px ) and (max-width: 992px){
+@media only screen and (min-width: 360px ) and (max-width: 992px){
     .navbar{
         padding-bottom: 35px !important;
     }
@@ -138,12 +142,6 @@ body{
     float: left;
     width: 100%;
     min-height: 300px;
-    margin-left: 2.564102564102564%;
-}
-@media only screen and (min-width: 480px ) and (max-width: 760px){
-    .row-fluid{
-        margin-right: 5%;
-    }
 }
 @media only screen and (min-width: 760px ) and (max-width: 990px){
     .row-fluid .span4 {
@@ -154,6 +152,7 @@ body{
 @media only screen and (min-width: 990px ){
     .row-fluid .span4 {
         width: 30%;
+        margin-left: 2.564102564102564%;
     }
 }  
 .m-bottom {
@@ -261,13 +260,15 @@ body{
     border-bottom: 1px solid rgb(167, 167, 167);
 }
 .mibotonIndex {
+    color: white;
     margin-left: 42%;
     margin-right: 40%;
     background-color: #1e7785 !important;
 }
  /*ESTILO CONTACTO*/
 #contacto {
-    flex-wrap: wrap;
+    display: flex;
+    flex-flow: row wrap;
     background-color: rgba(211, 215, 216, 0.5);
     margin: 10px 40px;
 }
@@ -343,7 +344,7 @@ body{
     margin: 10px 40px;
 } 
 #comoComprar ol {
-    margin: 10px 40px;
+    margin: 10px;
     list-style-position: inside;
     font-size: 14px
 }
@@ -352,7 +353,8 @@ body{
     margin:10px 40px;
 }
 #somosFlex{
-    flex-wrap: wrap;
+    display: flex;
+    flex-flow: row wrap;
     width: 100%;
     height: 50%;
     margin-bottom: 10px;
@@ -385,6 +387,8 @@ footer {
     padding: 10px;
 }
 .contenedorRedes{
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     width: 100%;
     height: 5%;
