@@ -1,0 +1,33 @@
+@mixin misSubtitulos ($sizeycolor){  
+    @if $sizeycolor == comocomprar{
+       color: #1e7785;
+       font-size: 20px;
+    }@else if $sizeycolor == categorias{
+       color: #444;
+       font-size: 16px; 
+    }
+    font-weight: 700;
+}
+@mixin redes ($nombre){
+    @if $nombre == instagram {
+        color: black;
+    }@else if $nombre == facebook {
+        color: #1771E6;
+    }@else{
+        color: #4ECB5C;   
+    }    
+    width: 3%;
+    height: 60%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+@mixin footerbg ($gradient){
+    @if $gradient == footer {
+        background: linear-gradient(90deg, rgba(244,196,120,1) 0%, rgba(159,172,148,1) 49%, rgba(105,157,166,1) 100%);
+    }@else{
+        background-color: #F3F2EC;
+    }
+    height: 10vh;
+    margin-top: 10px;
+    padding: 10px;
+}
