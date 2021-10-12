@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Estilos genéricos*/
+/*ESTILOS GENÉRICOS*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 body {
   font-family: 'Poppins', sans-serif;
@@ -54,7 +54,7 @@ body {
   font-weight: 700;
 }
 
-/*Nav menu*/
+/*MENÚ*/
 .logo {
   font-size: 150%;
   color: #d09845;
@@ -103,7 +103,7 @@ body {
   }
 }
 
-/*Banner*/
+/*BANNER*/
 .bannerPrincipal {
   background-image: url("../img/portada.jpg");
   background-repeat: no-repeat;
@@ -201,8 +201,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .textbanner-link {
@@ -255,7 +253,7 @@ body {
   text-overflow: ellipsis;
 }
 
-/*Productos destacados del index*/
+/*PRODUCTOS DESTACADOS DEL INDEX*/
 .m-top-prod {
   margin-top: 70%;
 }
@@ -265,8 +263,8 @@ body {
   display: grid;
   -ms-grid-columns: 40% 40%;
       grid-template-columns: 40% 40%;
-  -ms-grid-rows: 1fr 10px 10px 1fr 10px 10px 1fr 10px 10px;
-      grid-template-rows: 1fr 10px 10px 1fr 10px 10px 1fr 10px 10px;
+  -ms-grid-rows: 30% 10px 10px 30% 10px 10px 30% 10px 10px;
+      grid-template-rows: 30% 10px 10px 30% 10px 10px 30% 10px 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -397,7 +395,7 @@ h3 {
 }
 
 #productosPadre img {
-  height: 300px;
+  height: 290px;
   width: 90%;
   margin-top: 20px;
   margin-bottom: 5px;
@@ -432,7 +430,7 @@ h3 {
   color: black;
 }
 
-/*Como comprar*/
+/*COMO COMPRAR*/
 #comoComprar p {
   margin: 10px 40px;
 }

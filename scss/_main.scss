@@ -1,4 +1,4 @@
-/*Estilos genéricos*/
+/*ESTILOS GENÉRICOS*/
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -39,7 +39,7 @@ body{
 .categorias {
     @include misSubtitulos (categorias);
 }
-/*Nav menu*/
+/*MENÚ*/
 .logo {
     font-size: 150%;
     color:#d09845;
@@ -80,7 +80,7 @@ body{
         padding-left: 3.5rem !important;
     }
 }
-/*Banner*/
+/*BANNER*/
 .bannerPrincipal{
     background-image: url('../img/portada.jpg');
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@ body{
     .span4{
         display: block;
         float: left;
-        width: 100%;
+        width: $ancho;
         min-height: 300px;
     }
 }
@@ -162,25 +162,23 @@ body{
     .textbanner-image {
         position: absolute;
         top: 0;
-        width: 100%;
+        width: $ancho;
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        transform: scale(1);
-        
     }
 }
 .textbanner-link {
     display: block;
-    width: 100%;
+    width: $ancho;
     height: 100%;
 }
 .blur {
     filter: blur(2px);
 }
 .imgCategorias {
-    width: 100%;
+    width: $ancho;
     height: auto;
     border: 0;
 }
@@ -193,7 +191,7 @@ body{
     top: 50%;
     left: 50%;
     z-index: 9;
-    width: 100%;
+    width:$ancho;
     padding: 30px 20px;
     color: white;
     transform: translate(-50%, -50%);
@@ -211,24 +209,24 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-/*Productos destacados del index*/
+/*PRODUCTOS DESTACADOS DEL INDEX*/
 .m-top-prod{
     margin-top: 70%;
 }
 #contenedorProductos{
     display: grid;
     grid-template-columns: 40% 40%;
-    grid-template-rows: 1fr 10px 10px 1fr 10px 10px 1fr 10px 10px;
+    grid-template-rows: 30% 10px 10px 30% 10px 10px 30% 10px 10px;
     justify-content: center;
     justify-items: center;
     align-items: center;
     grid-row-gap: 20px;
     grid-column-gap: 10px;
-    width: 100%;
+    width: $ancho;
     height: 40%;
     margin-bottom: 60px;
         img {
-            width: 100% ;
+            width: $ancho ;
             height: 80% ;
             margin-top: 20px;
             margin-bottom: 5px;
@@ -263,7 +261,7 @@ body{
     background-color: #1e7785 !important;
     border-color: #1e7785 !important;
 }
-  /*ESTILO DE PRODUCTOS*/
+/*ESTILO DE PRODUCTOS*/
 .titulos {
     color:#1e7785;
     font-weight: 700;
@@ -285,7 +283,7 @@ body{
     content: "";
     display: block;
     background: #444;
-    width: 100%;
+    width: $ancho;
     margin-top: 3px;
     height: 2px;
     clip-path: var(--clippy);
@@ -302,14 +300,14 @@ h3{
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
-    width: 100%;
+    width: $ancho;
     height: 100%;
     margin-top: 18px;
     margin-bottom: 40px;
     text-align: center;
     flex-wrap: wrap;
         img {
-            height: 300px;
+            height: 290px;
             width: 90% ;
             margin-top: 20px;
             margin-bottom: 5px;
@@ -335,7 +333,7 @@ h3{
             color: black;
         }
 }
-/*Como comprar*/
+/*COMO COMPRAR*/
 #comoComprar{
     p{
         margin: 10px 40px;
@@ -355,7 +353,7 @@ h3{
 #somosFlex{
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    width: $ancho;
     height: 50%;
     margin-bottom: 10px;
     margin-top: 40px;
