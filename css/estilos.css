@@ -263,8 +263,8 @@ body {
   display: grid;
   -ms-grid-columns: 40% 40%;
       grid-template-columns: 40% 40%;
-  -ms-grid-rows: 30% 10px 10px 30% 10px 10px 30% 10px 10px;
-      grid-template-rows: 30% 10px 10px 30% 10px 10px 30% 10px 10px;
+  -ms-grid-rows: 2fr 10px 10px 2fr 10px 10px 2fr 10px 10px;
+      grid-template-rows: 2fr 10px 10px 2fr 10px 10px 2fr 10px 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
