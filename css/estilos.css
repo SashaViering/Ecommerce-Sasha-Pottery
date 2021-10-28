@@ -270,6 +270,16 @@ body {
   margin-top: 70%;
 }
 
+.item-link {
+  color: black;
+  text-decoration: none;
+}
+
+.item-link:hover {
+  color: #7e7e7e;
+  text-decoration: none;
+}
+
 #contenedorProductos {
   display: -ms-grid;
   display: grid;
@@ -539,15 +549,5 @@ footer {
   width: 100%;
   height: 5%;
   margin-top: 50px;
-}
-
-.item-link {
-  color: black;
-  text-decoration: none;
-}
-
-.item-link:hover {
-  color: #7e7e7e;
-  text-decoration: none;
 }
 /*# sourceMappingURL=estilos.css.map */
