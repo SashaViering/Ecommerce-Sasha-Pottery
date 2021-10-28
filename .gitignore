@@ -2,7 +2,6 @@
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
-/.vscode
 # macOS
 .DS_Store
 
@@ -33,3 +32,4 @@ logs
 *.sql
 
 test/
+.vscode/
