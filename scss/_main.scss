@@ -216,12 +216,11 @@ html{
 }
 /*ESTILO CONTACTO*/
 #contacto {
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     background-color: rgba(211, 215, 216, 0.5);
     margin: 10px 40px;
         img {
             height: 100%;
-            width:300px;
         }
 }
 .contactoTitulo{
