@@ -3,19 +3,22 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
+html{
+    scroll-behavior: smooth;
+}
 .marginForm{
     margin: 10px;
 }
 .marginInput{
     margin-bottom: 20px;
 }
-.fontSize{
+.fontsize-manos{
     font-size: 30px !important;
     margin-top: 80px;
     margin-right: 10px;
     margin-left: 10px;
 }
-.fontSize2{
+.fontsize-piezas{
     font-size: 20px;
     margin-bottom: 100px;
     margin-right: 10px;
@@ -60,26 +63,6 @@ body{
 .navbar{
     padding-top: 35px;
 }
-@media only screen and (min-width: 360px ) and (max-width: 992px){
-    .navbar{
-        padding-bottom: 35px !important;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .container-fluid{
-        height: 115px;
-    }
-    .nav-link {
-        padding-right: 2rem !important;
-        padding-left: 2rem !important;
-    }
-}
-@media only screen and (min-width: 1200px){
-    .nav-link {
-        padding-right: 3rem !important;
-        padding-left: 3.5rem !important;
-    }
-}
 /*BANNER*/
 .carousel-indicators {
     li{
@@ -95,7 +78,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    background-color: #F3F2EC;
+    background-color: $color-terciario;
      .item {
         padding: 10px;  
         margin: 5px;
@@ -114,22 +97,6 @@ body{
         min-height: 300px;
     }
 }
-@media only screen and (min-width: 760px ) and (max-width: 990px){
-    .row-fluid{ 
-        .span4 {
-        width: 40%;
-        margin-left: 7%;
-        }
-    }    
-}
-@media only screen and (min-width: 990px ){
-    .row-fluid{ 
-        .span4 {
-        width: 30%;
-        margin-left: 2.564102564102564%;
-        }
-    }
-}  
 .m-bottom {
     margin-bottom: 20px!important;
 }
@@ -166,7 +133,7 @@ body{
     height: 100%;
 }
 .blur {
-    filter: contrast(85%) blur(1px);
+    filter: brightness(80%) blur(1px);
     transform: scale(2);
     transition: opacity .2s;
 }
@@ -177,8 +144,6 @@ body{
 }
 .imgCategorias {
     width: $ancho;
-    height: auto;
-    border: 0;
 }
 .btn-line{
     background-color: #fff;
@@ -189,7 +154,7 @@ body{
 }
 .btn-line:hover{
     color: #fff;
-    background-color: #1e7785;
+    background-color: $color-secundario;
 }
 .textbanner-text {
     position: absolute;
@@ -251,26 +216,26 @@ body{
 }
 /*ESTILO CONTACTO*/
 #contacto {
-    display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     background-color: rgba(211, 215, 216, 0.5);
     margin: 10px 40px;
         img {
             height: 100%;
+            width:300px;
         }
+}
+form{
+    min-width: 380px;
+    width: 40%
 }
 .contactoTitulo{
     @include misSubtitulos (comocomprar);
     margin-bottom: 10px;
     margin: 10px 40px;
 }
-.botonContacto{
-    background-color: #1e7785 !important;
-    border-color: #1e7785 !important;
-}
 /*ESTILO DE PRODUCTOS*/
 .titulos {
-    color:#1e7785;
+    color: $color-secundario;
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 10px;
@@ -284,7 +249,7 @@ body{
     color: black;
     font-size: 13px;
     padding-left: 40px !important;
-    background-color: #fafbfc;
+    background-color: $color-terciario;
 }
 .liNav::after{
     content: "";
@@ -298,14 +263,12 @@ body{
 }
 .liNav:hover{
     --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    color: #1e7785;
+    color: $color-secundario;
 }
 h3{
     font-size: 18px;
 }
 #productosPadre{
-    flex-direction: row;
-    justify-content: space-evenly;
     align-content: center;
     width: $ancho;
     height: 100%;
@@ -327,7 +290,21 @@ h3{
     width: 300px;
     max-height: 650px;
     margin: 10px;
-    box-shadow: 0px 0px 5px 1px #F3F2EC;
+    box-shadow: 0px 0px 5px 1px #e0dfdb;
+}
+.btn-generico{
+    color: white;
+    background-color: $color-secundario;
+    border-color: $color-secundario;
+}
+.btn-generico:hover{
+    color: #fff;
+    background-color: #3092a1;
+    border-color: #3092a1 ;
+}
+.bi-cart-check{
+    margin-top: 5px;
+    margin-left: 5px;
 }
 .colorCuotas {
     color: #a3d4fa;
@@ -407,4 +384,26 @@ footer {
     width: $ancho;
     height: 5%;
     margin-top: 50px;
+} 
+/*MENU*/
+@media only screen and (min-width: 360px ) and (max-width: 992px){
+    .navbar{
+        padding-bottom: 35px !important;
+    }
 }
+@media only screen and (min-width: 992px) {
+    .container-fluid{
+        height: 115px;
+    }
+    .nav-link {
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .nav-link {
+        padding-right: 3rem !important;
+        padding-left: 3.5rem !important;
+    }
+}
+ 

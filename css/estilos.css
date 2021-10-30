@@ -6,6 +6,10 @@ body {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .marginForm {
   margin: 10px;
 }
@@ -14,14 +18,14 @@ body {
   margin-bottom: 20px;
 }
 
-.fontSize {
+.fontsize-manos {
   font-size: 30px !important;
   margin-top: 80px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-.fontSize2 {
+.fontsize-piezas {
   font-size: 20px;
   margin-bottom: 100px;
   margin-right: 10px;
@@ -80,29 +84,6 @@ body {
   padding-top: 35px;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 992px) {
-  .navbar {
-    padding-bottom: 35px !important;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .container-fluid {
-    height: 115px;
-  }
-  .nav-link {
-    padding-right: 2rem !important;
-    padding-left: 2rem !important;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .nav-link {
-    padding-right: 3rem !important;
-    padding-left: 3.5rem !important;
-  }
-}
-
 /*BANNER*/
 .carousel-indicators li {
   width: 10px;
@@ -140,20 +121,6 @@ body {
   float: left;
   width: 100%;
   min-height: 300px;
-}
-
-@media only screen and (min-width: 760px) and (max-width: 990px) {
-  .row-fluid .span4 {
-    width: 40%;
-    margin-left: 7%;
-  }
-}
-
-@media only screen and (min-width: 990px) {
-  .row-fluid .span4 {
-    width: 30%;
-    margin-left: 2.564102564102564%;
-  }
 }
 
 .m-bottom {
@@ -200,8 +167,8 @@ body {
 }
 
 .blur {
-  -webkit-filter: contrast(85%) blur(1px);
-          filter: contrast(85%) blur(1px);
+  -webkit-filter: brightness(80%) blur(1px);
+          filter: brightness(80%) blur(1px);
   -webkit-transform: scale(2);
           transform: scale(2);
   -webkit-transition: opacity .2s;
@@ -219,8 +186,6 @@ body {
 
 .imgCategorias {
   width: 100%;
-  height: auto;
-  border: 0;
 }
 
 .btn-line {
@@ -317,19 +282,20 @@ body {
 
 /*ESTILO CONTACTO*/
 #contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: rgba(211, 215, 216, 0.5);
   margin: 10px 40px;
 }
 
 #contacto img {
   height: 100%;
+  width: 300px;
+}
+
+form {
+  min-width: 380px;
+  width: 40%;
 }
 
 .contactoTitulo {
@@ -338,11 +304,6 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
   margin: 10px 40px;
-}
-
-.botonContacto {
-  background-color: #1e7785 !important;
-  border-color: #1e7785 !important;
 }
 
 /*ESTILO DE PRODUCTOS*/
@@ -363,7 +324,7 @@ body {
   color: black;
   font-size: 13px;
   padding-left: 40px !important;
-  background-color: #fafbfc;
+  background-color: #F3F2EC;
 }
 
 .liNav::after {
@@ -391,13 +352,6 @@ h3 {
 }
 
 #productosPadre {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -ms-flex-line-pack: center;
       align-content: center;
   width: 100%;
@@ -427,8 +381,25 @@ h3 {
   width: 300px;
   max-height: 650px;
   margin: 10px;
-  -webkit-box-shadow: 0px 0px 5px 1px #F3F2EC;
-          box-shadow: 0px 0px 5px 1px #F3F2EC;
+  -webkit-box-shadow: 0px 0px 5px 1px #e0dfdb;
+          box-shadow: 0px 0px 5px 1px #e0dfdb;
+}
+
+.btn-generico {
+  color: white;
+  background-color: #1e7785;
+  border-color: #1e7785;
+}
+
+.btn-generico:hover {
+  color: #fff;
+  background-color: #3092a1;
+  border-color: #3092a1;
+}
+
+.bi-cart-check {
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .colorCuotas {
@@ -549,5 +520,29 @@ footer {
   width: 100%;
   height: 5%;
   margin-top: 50px;
+}
+
+/*MENU*/
+@media only screen and (min-width: 360px) and (max-width: 992px) {
+  .navbar {
+    padding-bottom: 35px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-fluid {
+    height: 115px;
+  }
+  .nav-link {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-link {
+    padding-right: 3rem !important;
+    padding-left: 3.5rem !important;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

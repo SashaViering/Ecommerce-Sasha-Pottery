@@ -48,134 +48,148 @@
        <!--ACÁ PUSE BOTONES, PERO AÚN NO REDIRECCIONAN A OTRAS PÁGINAS-->
       <h1 class="titulos">Productos</h1>
       <nav class="nav">
-          <a class="nav-link liNav active" href="#">CUENCOS</a>
-          <a class="nav-link liNav" href="productos.html">TAZAS</a>
-          <a class="nav-link liNav" href="productos.html">MACETAS</a>
-          <a class="nav-link liNav" href="productos.html">FLOREROS</a>
-          <a class="nav-link liNav" href="productos.html">PIEZAS ÚNICAS</a>
+          <a class="nav-link liNav active" href="#cuenco">CUENCOS</a>
+          <a class="nav-link liNav" href="#taza">TAZAS</a>
+          <a class="nav-link liNav" href="#maceta">MACETAS</a>
+          <a class="nav-link liNav" href="#florero">FLOREROS</a>
+          <a class="nav-link liNav" href="#pieza">PIEZAS ÚNICAS</a>
       </nav> 
-          <div class="d-flex container-fluid" id="productosPadre">
+        <section>
+          <div class="d-flex container-fluid justify-content-around" id="productosPadre">
               <div class="caja">
                   <div>
-                      <img src="img/tazacuadrillé.jpg" alt="taza">
+                      <img src="img/tazacuadrillé.jpg" srcset="img/tazacuadrillé.jpg, img/tazacuadrillé.jpg 2x" alt="taza de cerámica a cuadros">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Taza cuadrillé</h3>
                       <p class="text-center fontwBold">$1500</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div> 
-              <div class=" d-flex caja">
+              <div class="caja">
                   <div>
-                      <img src="img/prodindex2.jpg" alt="taza">
+                      <img src="img/prodindex2.jpg" srcset="img/prodindex2.jpg, img/prodindex2.jpg 2x" alt="Maceta de cerámica minimalista">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Maceta XL Face</h3>
                       <p class="text-center fontwBold">$2990</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
-              <div class=" d-flex caja">
+              <div id="florero" class="caja">
                   <div>
-                      <img src="img/prodindex5.jpg" alt="taza">
+                      <img src="img/prodindex5.jpg" srcset="img/prodindex5.jpg, img/prodindex5.jpg 2x" alt="Florero de cerámica con manchas">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Florero M2</h3>
                       <p class="text-center fontwBold">$1990</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
-              <div class="d-flex caja">
+              <div class="caja">
                   <div>
-                      <img src="img/prodindex4.jpg" alt="taza">
+                      <img src="img/prodindex4.jpg" srcset="img/prodindex4.jpg, img/prodindex4.jpg 2x" alt="Florero de cerámica color natural">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Florero M1</h3>
                       <p class="text-center fontwBold">$1990</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
-              <div class="d-flex caja">
+              <div id="taza" class="caja">
                   <div>
-                      <img src="img/prodindex3.jpg" alt="taza">
+                      <img src="img/prodindex3.jpg" srcset="img/prodindex3.jpg, img/prodindex3.jpg 2x" alt="Taza de cerámica Nipples">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Taza Nipples</h3>
                       <p class="text-center fontwBold">$1500</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
-              <div class="d-flex caja">
+              <div id="maceta" class="caja">
                   <div>
-                      <img src="img/prodindex6.jpg" alt="taza">
+                      <img src="img/prodindex6.jpg" srcset="img/prodindex6.jpg, img/prodindex6.jpg 2x" alt="Maceta de cerámica con base">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Maceta Base</h3>
                       <p class="text-center fontwBold">$2500</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
-              <div class="d-flex caja">
+              <div id="cuenco" class="caja">
                   <div>
-                      <img src="img/producto5.jpg" alt="taza">
+                      <img src="img/producto5.jpg" srcset="img/producto5.jpg, img/producto5.jpg 2x" alt="Cuenco de cerámica con pintura de constelación">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Cuenco Constelación</h3>
                       <p class="text-center fontwBold">$1500</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
-              <div class="d-flex caja">
+              <div class="caja">
                   <div>
-                      <img src="img/producto6.jpg" alt="taza">
+                      <img src="img/producto6.jpg" srcset="img/producto6.jpg, img/producto6.jpg 2x" alt="Taza de cerámica con manchas irregulares">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Taza Parches</h3>
                       <p class="text-center fontwBold">$1600</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
-              <div class="d-flex caja">
+              <div class="caja">
                   <div>
-                      <img src="img/producto7.jpg" alt="taza">
+                      <img src="img/producto7.jpg" srcset="img/producto7.jpg, img/producto7.jpg 2x" alt="Taza de cerámica de hojas">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Taza Hojas</h3>
                       <p class="text-center fontwBold">$1500</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
-              <div class="d-flex caja">
+              <div class="caja">
                   <div>
-                      <img src="img/producto8.jpg" alt="taza">
+                      <img src="img/producto8.jpg" srcset="img/producto8.jpg, img/producto8.jpg 2x" alt="Florero de cerámica en forma de dona">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Florero Dona</h3>
                       <p class="text-center fontwBold">$1500</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
-              <div class="d-flex caja">
+              <div id="pieza" class="caja">
                   <div>
-                      <img src="img/producto9.jpg" alt="taza">
+                      <img src="img/producto9.jpg" srcset="img/producto9.jpg, img/producto9.jpg 2x" alt="Bola mágica de cerámica, decoración">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Bola Mágica</h3>
                       <p class="text-center fontwBold">$1500</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
-              <div class="d-flex caja">
+              <div class="caja">
                   <div>
-                      <img src="img/producto10.jpg" alt="taza">
+                      <img src="img/producto10.jpg" srcset="img/producto10.jpg, img/producto10.jpg 2x" alt="Florero de cerámica en cuadrillé">
                   </div>
                   <div class="texto">
                       <h2 class="text-center fontSizeProd fontWCateg">Florero Cuadrillé</h3>
                       <p class="text-center fontwBold">$1500</p>
                       <p class="colorCuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$250</strong></p>
+                      <div class="btn-generico btn btn-small" data-toggle="modal" data-target="#exampleModal">+</div>
                   </div>
               </div>
           </div>
+        </section>  
         <!--SECCIÓN-->
             <div class="d-flex flex-containerRow">
               <div class="item borderRight">Envíos a todo el país</div>
@@ -203,6 +217,29 @@
               <footer class="text-center">
                 <div>© Copyright Sasha Pottery - 2021</div>
               </footer>
+              <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hola!</h5>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                          </svg>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                           Agregaste <b>1</b> producto a tu carrito exitosamente
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>

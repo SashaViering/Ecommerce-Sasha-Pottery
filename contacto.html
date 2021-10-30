@@ -47,8 +47,8 @@
       </nav>
   <!--Contacto-->
           <p class="contactoTitulo"><b>Contacto</b></p>
-          <div class="d-flex" id="contacto" >
-              <div><img src="img/contacto1.jpg" loading="lazy" width="300px" alt="Macetas, floreros y tazas"></div>
+          <div class="d-flex row" id="contacto" >
+              <div><img src="img/contacto1.jpg" srcset="img/contacto1.jpg, img/contacto1.jpg 2x" loading="lazy" alt="Macetas, floreros y tazas"></div>
               <form class="marginForm bcForm" method="POST" action="email.php">
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Nombre</label>
@@ -69,7 +69,7 @@
                   <textarea name='inp_mensaje' class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
                 </div>
                 <div class="col-auto">
-                    <button type="submit" class="btn botonContacto btn-info mb-2">Enviar formulario</button>
+                    <button type="submit" class="btn btn-generico btn-info mb-2">Enviar formulario</button>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" required id="defaultCheck1">
