@@ -224,10 +224,6 @@ html{
             width:300px;
         }
 }
-form{
-    min-width: 380px;
-    width: 40%
-}
 .contactoTitulo{
     @include misSubtitulos (comocomprar);
     margin-bottom: 10px;
