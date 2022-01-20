@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "categoria": "Macetas",
+        "nombre": "Maceta XL",
+        "material": "cerámica",
+        "precio": 2990,
+        "stock": 30,
+        "img": "producto.jpg"
+    },
+    {
+        "id": 2,
+        "categoria": "Tazas",
+        "nombre": "Taza Hojas",
+        "material": "cerámica",
+        "precio": 1590,
+        "stock": 20,
+        "img": "producto7.jpg"
+    },
+    {
+        "id": 3,
+        "categoria": "Floreros",
+        "nombre": "Florero Dona",
+        "material": "cerámica",
+        "precio": 1990,
+        "stock": 25,
+        "img": "producto8.jpg"
+    },
+    {
+        "id": 4,
+        "categoria": "Floreros",
+        "nombre": "Florero Parches",
+        "material": "cerámica",
+        "precio": 1790,
+        "stock": 40,
+        "img": "prodindex5.jpg"
+    },
+    {
+        "id": 5,
+        "categoria": "Tazas",
+        "nombre": "Taza Cuadrillé",
+        "material": "cerámica",
+        "precio": 40000,
+        "stock": 16,
+        "img": "tazacuadrillé.jpg"
+    },
+    {
+        "id": 6,
+        "categoria": "Cuencos",
+        "nombre": "Cuenco Constelación",
+        "material": "cerámica",
+        "precio": 1790,
+        "stock": 40,
+        "img": "producto5.jpg"
+    },
+    {
+        "id": 7,
+        "categoria": "Floreros",
+        "nombre": "Florero Cuadrillé",
+        "material": "cerámica",
+        "precio": 1990,
+        "stock": 40,
+        "img": "producto10.jpg"
+    },
+    {
+        "id": 8,
+        "categoria": "Tazas",
+        "nombre": "Taza Parches",
+        "material": "cerámica",
+        "precio": 1790,
+        "stock": 40,
+        "img": "producto6.jpg"
+    }
+]
